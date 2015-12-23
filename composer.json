@@ -1,5 +1,5 @@
 {
-    "name": "jalder/heartland-php",
+    "name": "hps/heartland-php",
     "description": "PHP SDK for processing payments via Portico Gateway",
     "keywords": [
         "securesubmit",
@@ -12,7 +12,7 @@
     "license": "MIT",
     "authors": [
       {
-        "name": "SFP/Heartland Payment Systems"
+        "name": "Heartland Payment Systems"
       }
     ],
     "require": {
