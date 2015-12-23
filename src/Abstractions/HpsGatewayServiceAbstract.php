@@ -60,7 +60,8 @@ abstract class HpsGatewayServiceAbstract
             curl_setopt($request, CURLOPT_TIMEOUT, 60);
             curl_setopt($request, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($request, CURLOPT_SSL_VERIFYPEER, false);
-            curl_setopt($request, CURLOPT_SSL_VERIFYHOST, false);
+	    curl_setopt($request, CURLOPT_SSL_VERIFYHOST, false);
+	    curl_setopt($request, CURLOPT_SSLVERSION, 6);
             if ($data != null) {
                 curl_setopt($request, CURLOPT_CUSTOMREQUEST, $httpVerb);
                 curl_setopt($request, CURLOPT_POSTFIELDS, $data);
